@@ -1,1 +1,1 @@
-let calculadora = new Function()
+let calculadora = new Function();
