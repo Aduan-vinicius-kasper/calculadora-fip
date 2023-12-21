@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="pt-">
 <head>
-    <meta name="Aduan">
+    <meta name="author" content="Hcode Treinamentos">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Calculadora</title>
@@ -10,7 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <style>
     body {
-        background-color:#ff0000;
+        background-color:#050505;
     }
     .center {
         position: absolute;
@@ -48,28 +47,10 @@
         color: #000;
         text-align: right;
         position: absolute;
-        bottom: 10px;
+        bottom: 0;
         width: 100%;
         font-size: 48px;
         font-weight: 600;
-    }
-    #display1{
-        color:#000;
-        text-align: right;
-        position: absolute;
-        padding-top: 40px;
-        font-size: 48px;
-        font-weight: 600;
-
-    }
-    #hora{
-        color: #000;
-        text-align: right;
-        position: absolute;
-        padding-top: 0;
-        font-size: 30px;
-        font-weight: 600;
-
     }
     .btn-number {
         background-color: #EFEFEF;
@@ -91,62 +72,54 @@
     <div class="center">
         <div id="calculadora">
             <header>
-                <p id="hora">
-                    
-                </p>
-                <p id="display1">
-                    0
-                </p>
-              
                 <div id="display">
                     0
                 </div>
             </header>
             <section class="container">
                 <div class="row">
-                    <button type="button" class="btn btn-others col-sm" id="porcento">%</button>
-                    <button type="button" class="btn btn-others col-sm" id="raiz">√</button>
-                    <button type="button" class="btn btn-others col-sm" id="potencia">x²</button>
-                    <button type="button" class="btn btn-others col-sm" id="fracao">¹/x</button>
+                    <button type="button" class="btn btn-others col-sm">%</button>
+                    <button type="button" class="btn btn-others col-sm">√</button>
+                    <button type="button" class="btn btn-others col-sm">x²</button>
+                    <button type="button" class="btn btn-others col-sm">¹/x</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-others col-sm" id="cleanAll">CE</button>
-                    <button type="button" class="btn btn-others col-sm" id="clean">C</button>
-                    <button type="button" class="btn btn-others col-sm" id="backspace"> ← </button>
-                    <button type="button" class="btn btn-others col-sm" id="divisao">÷</button>
+                    <button type="button" class="btn btn-clearEntry col-sm">CE</button>
+                    <button type="button" class="btn btn-clearAll col-sm">C</button>
+                    <button type="button" class="btn btn-backspace col-sm">←</button>
+                    <button type="button" class="btn btn-others col-sm">÷</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-number col-sm" id="7">7</button>
-                    <button type="button" class="btn btn-number col-sm" id="8">8</button>
-                    <button type="button" class="btn btn-number col-sm" id="9">9</button>
-                    <button type="button" class="btn btn-others col-sm" id="multiplicacao">X</button>
+                    <button type="button" class="btn btn-number col-sm">7</button>
+                    <button type="button" class="btn btn-number col-sm">8</button>
+                    <button type="button" class="btn btn-number col-sm">9</button>
+                    <button type="button" class="btn btn-others col-sm">X</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-number col-sm" id="4">4</button>
-                    <button type="button" class="btn btn-number col-sm" id="5">5</button>
-                    <button type="button" class="btn btn-number col-sm" id="6">6</button>
-                    <button type="button" class="btn btn-others col-sm" id="subtracao">-</button>
+                    <button type="button" class="btn btn-number col-sm">4</button>
+                    <button type="button" class="btn btn-number col-sm">5</button>
+                    <button type="button" class="btn btn-number col-sm">6</button>
+                    <button type="button" class="btn btn-others col-sm">-</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-number col-sm" id="1">1</button>
-                    <button type="button" class="btn btn-number col-sm" id="2">2</button>
-                    <button type="button" class="btn btn-number col-sm" id="3">3</button>
-                    <button type="button" class="btn btn-others col-sm" id="soma">+</button>
+                    <button type="button" class="btn btn-number col-sm">1</button>
+                    <button type="button" class="btn btn-number col-sm">2</button>
+                    <button type="button" class="btn btn-number col-sm">3</button>
+                    <button type="button" class="btn btn-others col-sm">+</button>
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-others col-sm" id="inverse">±</button>
-                    <button type="button" class="btn btn-number col-sm" id="0">0</button>
-                    <button type="button" class="btn btn-others col-sm" id="virgula">,</button>
-                    <button type="button" class="btn btn-others col-sm" id="igual">=</button>
+                    <button type="button" class="btn btn-others col-sm">±</button>
+                    <button type="button" class="btn btn-number col-sm">0</button>
+                    <button type="button" class="btn btn-dot col-sm">,</button>
+                    <button type="button" class="btn btn-equals col-sm">=</button>
                 </div>
             </section>
         </div>
     </div>
-
-
-    <script src="src/function.js"></script>
-    <script src="calculadora.js"> </script>
-
+    <script src="JS/display.js"></script>
+    <script src="JS/btn.js"></script>
+    <script src="JS/calculadora.js"></script>
+    <script src="function.js"></script>
 
 </body>
 </html>
